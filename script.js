@@ -13,3 +13,16 @@ function getComputerChoice(cc) {
     console.log(cc);  
 }
 
+function getHumanChoice(hc){
+    const hc = prompt("The user can now play", '');
+    if(hc === "rock"){
+        return "rock";
+    }
+    else if(hc === "paper"){
+        return "paper";
+    }
+    else if(hc === "scissors"){
+        return "scissors";
+    }
+    console.log(hc);
+}
