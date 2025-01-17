@@ -47,19 +47,13 @@ function playRound(humanSelection, computerSelection){
         console.log(`You lose! ${computerSelection} beats ${humanSelection}`);
         computerScore++;
     }
-    if(humanScore === computerScore){
-        console.log("The Human and Computer tie");
-    }
-    else if(humanScore>computerScore){
-        console.log(`Human: ${humanScore} beat the Computer: ${computerScore} in this round.`);
-    }
-    else if(humanScore<computerScore){
-        console.log(`Human: ${humanScore} loses to the Computer: ${computerScore} in this round.`);
-    }
+
     console.log(`Human: ${humanScore}`);
     console.log(`Computer: ${computerScore}`);
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+
+
+let humanSelection = getHumanChoice();
+let computerSelection = getComputerChoice();
 
